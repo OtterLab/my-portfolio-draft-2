@@ -1,0 +1,35 @@
+.logo {
+    width: 70px;
+    height: 70px;
+    padding-top: 6px;
+}
+
+.navMenuItems, .menuListItems {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 6px;
+    color: #242A35;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.menuListItems {
+    width: 240px;
+    padding-bottom: 15px;
+}
+
+.navMenuItems:hover, .menuListItems:hover {
+    background-color: #FFCB06;
+}
+
+.menuCloseIcon {
+    padding-left: .8em;
+    padding-top: 12px;
+}
+
+.socialMenuIcon {
+    position: relative;
+    left: 15px;
+}
