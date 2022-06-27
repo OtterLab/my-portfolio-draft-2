@@ -1,0 +1,25 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills_content {
+    background-color: #242A35;
+    width: 100%;
+    height: 90vh;
+}
+
+.skills_heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 1em;
+}
+
+.card_content {
+    width: 300px;
+    padding: 2px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}

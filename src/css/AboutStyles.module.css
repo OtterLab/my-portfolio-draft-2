@@ -1,0 +1,13 @@
+.about_content {
+    text-align: center;
+    padding: 3em 2em;
+}
+
+.about_heading {
+    text-transform: uppercase;
+}
+
+.about_text {
+    padding-left: 3em;
+    padding-right: 3em;
+}
