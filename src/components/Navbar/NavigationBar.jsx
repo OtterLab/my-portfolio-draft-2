@@ -1,10 +1,10 @@
 import { React, useState } from 'react';
-import classes from '../css/NavbarStyles.module.css';
+import classes from './NavbarStyles.module.css';
 import { NavLink } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
-import Logo from '../assets/ltcreative_logo_design.svg';
+import Logo from '../../assets/ltcreative_logo_design.svg';
 import Hidden from '@mui/material/Hidden';
 import IconButton from '@mui/material/IconButton';
 import SortIcon from '@mui/icons-material/Sort';
@@ -12,7 +12,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import SocialIcon from './SocialMenuIcon';
+import SocialIcon from './../SocialMenuIcon';
 
 // Navbar menu items
 const MenuItems = [

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../css/AboutStyles.module.css';
+import classes from '../About/AboutStyles.module.css';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';

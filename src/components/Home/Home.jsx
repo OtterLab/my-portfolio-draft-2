@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Paper from '@mui/material/Paper';
-import classes from '../css/HomeStyles.module.css';
+import classes from './HomeStyles.module.css';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import ProfileAvatar from '../assets/avatar_profile_icon.svg';
+import ProfileAvatar from '../../assets/avatar_profile_icon.svg';
 import Button from '@mui/material/Button';
-import SquareBG from './BackgroundEffects/SquareEffect';
-import About from './About';
-import Skills from './Skills';
+import SquareBG from '../BackgroundEffects/SquareEffect';
+import About from '../About/About';
+import Skills from '../Skills/Skills';
 import 'animate.css';
 
 function Home() {

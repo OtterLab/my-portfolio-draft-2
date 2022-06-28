@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../css/SkillsStyles.module.css';
+import classes from './SkillsStyles.module.css';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -13,7 +13,8 @@ function Skills() {
             <div className={classes.skills_content}>
                 <Typography variant="h4" className={classes.skills_heading} style={{fontWeight: '500'}}>My Skills</Typography>
                 <div className={classes.cards}>
-                    <Card className={classes.card_content}>
+                    <Card className={classes.card_content}
+                    >
                         <CardContent>
                             <CodeIcon style={{fontSize: "40", paddingTop: "10px", paddingBottom: "10px"}} />
                             <Typography variant="h6">FrontEnd</Typography>

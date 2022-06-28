@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../css/ProjectsStyles.module.css';
+import classes from './ProjectsStyles.module.css';
 
 function Projects() {
     return (   
