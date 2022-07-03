@@ -23,32 +23,25 @@ const MenuItems = [
 ];
 
 function NavigationBar() {
-    // styling Active Links
-    const navLinkStyles = ({ isActive }) => {
-        return {
-            color: isActive ? '#FFCB06' : '#242A35'
-        }
-    }
-
     const [openMenu, setOpenMenu] = useState(false);
 
     return (   
-        <AppBar position="sticky" elevation={0} style={{backgroundColor: '#FFFFFF'}}>
-            <Container maxWidth="xl">
+        <AppBar position="fixed" elevation={0} style={{background: 'transparent', backgroundColor: 'rgba(0, 0, 0, 0.6)'}}>
+            <Container maxWidth="lg">
                 <Toolbar disableGutters>
                     <div style={{flexGrow: 1}}>
                         <img src={Logo} alt="ltcreative logo" className={classes.logo}/>
                     </div>
                     <Hidden smDown>
                         {MenuItems.map((item) => (
-                            <NavLink key={item.title} to={item.url} className={classes.navMenuItems} style={navLinkStyles}>
+                            <NavLink key={item.title} to={item.url} className={classes.navMenuItems} style={{color: 'white'}}>
                                 {item.title}
                             </NavLink>
                         ))}
                     </Hidden>
                     <Hidden smUp>
                         <IconButton onClick={() => setOpenMenu(true)}>
-                            <SortIcon style={{fontSize: '30'}}/>
+                            <SortIcon style={{fontSize: '30', color: 'white'}}/>
                         </IconButton>
                     </Hidden>
                 </Toolbar>

@@ -1,40 +1,37 @@
 import React from 'react';
 import classes from './SkillsStyles.module.css';
 import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import StorageIcon from '@mui/icons-material/Storage';
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import CodeIcon from '@mui/icons-material/Code';
+import PenRulerCube from '../../assets/symmetric_cubes-01.svg';
+import DesignCodeCube from '../../assets/symmetric_cubes-02.svg';
+import ServerCube from '../../assets/symmetric_cubes-03.svg';
 
 function Skills() {
     return (   
-        <div className="container">
-            <div className={classes.skills_content}>
-                <Typography variant="h4" className={classes.skills_heading} style={{fontWeight: '500'}}>My Skills</Typography>
-                <div className={classes.cards}>
-                    <Card className={classes.card_content}
-                    >
-                        <CardContent>
-                            <CodeIcon style={{fontSize: "40", paddingTop: "10px", paddingBottom: "10px"}} />
-                            <Typography variant="h6">FrontEnd</Typography>
-                            <Typography variant="body2" style={{paddingTop: '10px'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga asperiores, quos vel aliquid recusandae facere ipsa! Blanditiis, molestiae enim.</Typography>
-                        </CardContent>
-                    </Card>
-                    <Card className={classes.card_content}>
-                        <CardContent>
-                            <StorageIcon style={{fontSize: "40", paddingTop: "10px", paddingBottom: "10px"}} />
-                            <Typography variant="h6">BackEnd</Typography>
-                            <Typography variant="body2" style={{paddingTop: '10px'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga asperiores, quos vel aliquid recusandae facere ipsa! Blanditiis, molestiae enim.</Typography>
-                        </CardContent>
-                    </Card>
-                    <Card className={classes.card_content}>
-                        <CardContent>
-                            <DesignServicesIcon style={{fontSize: "40", paddingTop: "10px", paddingBottom: "10px"}}/>
-                            <Typography variant="h6">Graphic Design</Typography>
-                            <Typography variant="body2" style={{paddingTop: '10px'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga asperiores, quos vel aliquid recusandae facere ipsa! Blanditiis, molestiae enim.</Typography>
-                        </CardContent>
-                    </Card>
+        <div className={classes.skills_container}>
+            <div className={classes.skillsTitle}>
+                <Typography variant="h4" className={classes.skills_heading} style={{fontWeight: '500', color: 'white'}}>My Skills</Typography>
+            </div>
+            <div className={classes.card_container}>
+                <div className={classes.card}>
+                    <div className={classes.cube}>
+                        <img src={PenRulerCube} className={classes.cubeBox} alt="pen ruler cube"/>
+                    </div>
+                    <Typography variant="h5" style={{fontWeight: '500'}}>Graphic Design</Typography>
+                    <Typography variant="body2" style={{paddingTop: '8px', paddingBottom: '8px'}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quod alias iste consectetur molestias reiciendis inventore eos accusantium. Explicabo, eum.</Typography>
+                </div>
+                <div className={classes.card}>
+                    <div className={classes.cube}>
+                        <img src={DesignCodeCube} className={classes.cubeBox} alt="design code cube"/>
+                    </div>
+                    <Typography variant="h5" style={{fontWeight: '500'}}>Frontend</Typography>
+                    <Typography variant="body2" style={{paddingTop: '8px', paddingBottom: '8px'}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quod alias iste consectetur molestias reiciendis inventore eos accusantium. Explicabo, eum.</Typography>
+                </div>
+                <div className={classes.card}>
+                    <div className={classes.cube}>
+                        <img src={ServerCube} className={classes.cubeBox} alt="server cube"/>
+                    </div>
+                    <Typography variant="h5" style={{fontWeight: '500'}}>Backend</Typography>
+                    <Typography variant="body2" style={{paddingTop: '8px', paddingBottom: '8px'}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quod alias iste consectetur molestias reiciendis inventore eos accusantium. Explicabo, eum.</Typography>
                 </div>
             </div>
         </div>

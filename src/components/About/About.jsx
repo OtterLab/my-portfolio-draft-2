@@ -12,7 +12,12 @@ function About() {
                 <Typography variant="body1" className={classes.about_text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla quia consectetur tempore nostrum. Quis, illum esse libero at minima deserunt, autem accusantium amet numquam excepturi voluptas magni voluptatem commodi odio sit magnam deleniti et quos. Pariatur dolore ex ut excepturi officia iste, voluptas recusandae eaque nobis aliquam dolores explicabo aperiam?</Typography>
             </div>
             <div style={{textAlign: 'center'}}>
-                <Button variant="outlined" className={classes.downloadBtn} startIcon={<DownloadIcon/>} style={{borderColor: '#FFCB06', color: '#242A35'}}>Download Resume</Button>
+                <Button variant="outlined" sx={{
+                    borderRadius: 50,
+                    backgroundImage: 'linear-gradient(45deg, red, orange)',
+                    boxShadow: '0px 5px 12px #CF77F3, 0px 5px 12px #009BFF, 0px -5px 12px #2AC9DB'
+                }}
+                className={classes.downloadBtn} startIcon={<DownloadIcon/>} style={{borderColor: '#FFCB06', color: '#242A35'}}>Download CV</Button>
             </div>
         </div>
     );

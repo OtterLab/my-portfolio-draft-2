@@ -1,27 +1,22 @@
-.heroBg {
-    background-image: url(../../assets/hero_image_cover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.section {
     height: 90vh;
-    width: 100%;
+    background-image: url('../../assets/hero_image_cover.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    height: 100%;
 }
 
 .container {
     height: 100%;
 }
 
-.content {
-    height: 100%;
-    z-index: 100;
-    position: relative;
-    bottom: 10px;
-    left: 6px;
-}
-
-.profileImg {
+.profileAvatar {
     width: 300px;
     height: 300px;
-    padding-top: 2em;
     position: relative;
-    left: 3em;
+    right: 4em;
+    top: 2em;
 }

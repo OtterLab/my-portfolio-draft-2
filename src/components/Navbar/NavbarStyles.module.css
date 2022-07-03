@@ -4,7 +4,17 @@
     padding-top: 6px;
 }
 
-.navMenuItems, .menuListItems {
+.navMenuItems {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 6px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.menuListItems {
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 6px;
